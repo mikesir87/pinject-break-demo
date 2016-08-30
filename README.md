@@ -13,7 +13,7 @@ mvn clean package docker:build
 ## Running Docker Image
 
 ```
-docker run --rm -tip 8080:8080 -p 9990:9990 gulp-break-demo
+docker run --rm -tip 8080:8080 -p 9990:9990 pinject-break-demo
 ```
 
 Then, open your browser to http://localhost:8080/

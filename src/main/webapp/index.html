@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hi there</title>
+</head>
+<body>
+  <h1>Hi there!</h1>
+  <h3>Output:</h3>
+  <pre id="output"></pre>
+
+  <h3>Second Output:</h3>
+  <pre id="output2"></pre>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(startup);
+
+    function startup() {
+      $.get('/api/test', function(response) {
+        $("#output").text(response);
+      });
+      $.get('/api/test2', function(response) {
+        $("#output2").text(response);
+      });
+    }
+  </script>
+</body>
+</html>
